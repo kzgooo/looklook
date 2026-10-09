@@ -108,22 +108,22 @@ usage() {
 
 ```bash
 # 添加可执行权限
-chmod +x manage.sh
+chmod +x start_reset.sh
 
 # 启动靶场
-./manage.sh start
+./start_reset.sh start
 
 # 查看状态
-./manage.sh status
+./start_reset.sh status
 
 # 重置环境
-./manage.sh reset
+./start_reset.sh reset
 
 # 停止容器
-./manage.sh stop
+./start_reset.sh stop
 
 # 销毁环境
-./manage.sh down
+./start_reset.sh down
 ```
 
 ---
@@ -141,14 +141,14 @@ chmod +x manage.sh
 ```bash
 git clone <本项目地址>
 cd tunnel-lab
-chmod +x manage.sh
-./manage.sh start
+chmod +x start_reset.sh
+./start_reset.sh start
 ```
 
 ### 3. 查看状态
 
 ```bash
-./manage.sh status
+./start_reset.sh status
 ```
 
 ### 4. 开始学习
@@ -225,7 +225,7 @@ proxychains4 nmap -sT -Pn <内网IP>
 
 1. 本项目仅用于**合法授权的安全学习与测试**，请勿用于非法用途。
 2. 建议在隔离的虚拟机或专用环境中运行。
-3. 若 Docker 网络出现冲突，可执行 `./manage.sh reset` 重建环境。
+3. 若 Docker 网络出现冲突，可执行 `./start_reset.sh reset` 重建环境。
 4. 提权操作可能触发系统日志，学习时请留意观察。
 
 ---
